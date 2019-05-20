@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Listas de Precios</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+		$(document).ready(function(e) {
+			$.getJSON('./pricing.json', function(datos){
+				$.each(datos.productos, function(indice){
+					
+					var option = $('<option>'+datos.productos[indice].nombre+'</option>');
+					
+					$("#items").append(option);
+				});
+			});	
+		}):
+				
+		</script>
+
+	</head>
+	<body>
+		<div class="container mx-auto">
+			<div  class="row justify-content-md-center">
+				<h2>Listas de Precios</h2>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col col-lg-5">
+				  <ul class="list-group">
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						Dento
+						<span class="badge badge-primary badge-pill">S/. 2.70</span>
+					  </li>
+					</ul>
+				</div>
+				
+				<div class="col col-lg-5">
+				   <ul class="list-group">
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						Dento
+						<span class="badge badge-primary badge-pill">S/. 2.70</span>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div  class="row justify-content-md-center">
+				
+			</div>
+		</div>
+		<select name="items" id="items">
+					<option value="0">Selecciones</option>
+				</select>
+	</body>
+</html>
