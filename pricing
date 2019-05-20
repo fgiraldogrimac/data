@@ -1,0 +1,16 @@
+{
+	"productos":[
+		{
+			"nombre" : "DENTO",
+			"precio" : "S/. 2.70"
+		},
+		{
+			"nombre" : "KOLINOS",
+			"precio" : "S/. 3.50"
+		},
+		{
+			"nombre" : "COLGATE",
+			"precio" : "S/. 5.00"
+		}
+	]
+}
